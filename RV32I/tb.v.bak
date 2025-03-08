@@ -1,0 +1,28 @@
+module tb;
+    reg clk, rst;
+    top dut(.clk(clk), .rst(rst));
+
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk;  // Clock 100MHz
+    end
+
+    initial begin
+        rst = 1;
+        #10 rst = 0;
+
+        #1000; // chạy vài chu kỳ để kiểm tra
+        $display("x1 = %d", dut.cpu.regfile.regs[1]);
+        $display("x2 = %d", dut.cpu.regfile.regs[2]);
+        $display("x3 = %d", dut.cpu.regfile.regs[3]);
+        $display("x4 = %d", dut.cpu.regfile.regs[4]);
+
+        if (dut.cpu.regfile.regs[4] == 1) begin
+            $display("TEST PASSED");
+        end else begin
+            $display("TEST FAILED");
+        end
+
+        $stop;
+    end
+endmodule
