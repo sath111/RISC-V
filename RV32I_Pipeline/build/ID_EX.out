@@ -1,0 +1,190 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "D:\iverilog\iverilog\lib\ivl\system.vpi";
+:vpi_module "D:\iverilog\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\iverilog\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\iverilog\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\iverilog\iverilog\lib\ivl\va_math.vpi";
+S_000002434a492720 .scope module, "ID_EX" "ID_EX" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst_n";
+    .port_info 2 /INPUT 1 "jumpD";
+    .port_info 3 /INPUT 1 "branchD";
+    .port_info 4 /INPUT 2 "writebackD";
+    .port_info 5 /INPUT 3 "funcD";
+    .port_info 6 /INPUT 1 "load_storeD";
+    .port_info 7 /INPUT 1 "en_dmemD";
+    .port_info 8 /INPUT 4 "ALU_controlD";
+    .port_info 9 /INPUT 1 "alu_srcD";
+    .port_info 10 /INPUT 1 "wen_rfD";
+    .port_info 11 /INPUT 32 "out_rf1D";
+    .port_info 12 /INPUT 32 "out_rf2D";
+    .port_info 13 /INPUT 32 "out_extendD";
+    .port_info 14 /INPUT 5 "rdD";
+    .port_info 15 /INPUT 8 "PC_currentD";
+    .port_info 16 /INPUT 8 "PC_nextD";
+    .port_info 17 /INPUT 5 "rs1D";
+    .port_info 18 /INPUT 5 "rs2D";
+    .port_info 19 /OUTPUT 1 "jumpE";
+    .port_info 20 /OUTPUT 1 "branchE";
+    .port_info 21 /OUTPUT 2 "writebackE";
+    .port_info 22 /OUTPUT 3 "funcE";
+    .port_info 23 /OUTPUT 1 "load_storeE";
+    .port_info 24 /OUTPUT 1 "en_dmemE";
+    .port_info 25 /OUTPUT 4 "ALU_controlE";
+    .port_info 26 /OUTPUT 1 "alu_srcE";
+    .port_info 27 /OUTPUT 1 "wen_rfE";
+    .port_info 28 /OUTPUT 32 "out_rf1E";
+    .port_info 29 /OUTPUT 32 "out_rf2E";
+    .port_info 30 /OUTPUT 32 "out_extendE";
+    .port_info 31 /OUTPUT 5 "rdE";
+    .port_info 32 /OUTPUT 8 "PC_currentE";
+    .port_info 33 /OUTPUT 8 "PC_nextE";
+    .port_info 34 /OUTPUT 5 "rs1E";
+    .port_info 35 /OUTPUT 5 "rs2E";
+o000002434a4d3fd8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v000002434a492dd0_0 .net "ALU_controlD", 3 0, o000002434a4d3fd8;  0 drivers
+v000002434a4929e0_0 .var "ALU_controlE", 3 0;
+o000002434a4d4038 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v000002434a492a80_0 .net "PC_currentD", 7 0, o000002434a4d4038;  0 drivers
+v000002434a492b20_0 .var "PC_currentE", 7 0;
+o000002434a4d4098 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v000002434a5dbba0_0 .net "PC_nextD", 7 0, o000002434a4d4098;  0 drivers
+v000002434a5dbc40_0 .var "PC_nextE", 7 0;
+o000002434a4d40f8 .functor BUFZ 1, C4<z>; HiZ drive
+v000002434a5dbce0_0 .net "alu_srcD", 0 0, o000002434a4d40f8;  0 drivers
+v000002434a5dbd80_0 .var "alu_srcE", 0 0;
+o000002434a4d4158 .functor BUFZ 1, C4<z>; HiZ drive
+v000002434a5dbe20_0 .net "branchD", 0 0, o000002434a4d4158;  0 drivers
+v000002434a5dbec0_0 .var "branchE", 0 0;
+o000002434a4d41b8 .functor BUFZ 1, C4<z>; HiZ drive
+v000002434a4c2dc0_0 .net "clk", 0 0, o000002434a4d41b8;  0 drivers
+o000002434a4d41e8 .functor BUFZ 1, C4<z>; HiZ drive
+v000002434a4c2e60_0 .net "en_dmemD", 0 0, o000002434a4d41e8;  0 drivers
+v000002434a4c2f00_0 .var "en_dmemE", 0 0;
+o000002434a4d4248 .functor BUFZ 3, C4<zzz>; HiZ drive
+v000002434a4c2fa0_0 .net "funcD", 2 0, o000002434a4d4248;  0 drivers
+v000002434a4c3040_0 .var "funcE", 2 0;
+o000002434a4d42a8 .functor BUFZ 1, C4<z>; HiZ drive
+v000002434a4c36d0_0 .net "jumpD", 0 0, o000002434a4d42a8;  0 drivers
+v000002434a4c3d10_0 .var "jumpE", 0 0;
+o000002434a4d4308 .functor BUFZ 1, C4<z>; HiZ drive
+v000002434a4c3db0_0 .net "load_storeD", 0 0, o000002434a4d4308;  0 drivers
+v000002434a4c4030_0 .var "load_storeE", 0 0;
+o000002434a4d4368 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v000002434a4c31d0_0 .net "out_extendD", 31 0, o000002434a4d4368;  0 drivers
+v000002434a4c34f0_0 .var "out_extendE", 31 0;
+o000002434a4d43c8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v000002434a4c3130_0 .net "out_rf1D", 31 0, o000002434a4d43c8;  0 drivers
+v000002434a4c33b0_0 .var "out_rf1E", 31 0;
+o000002434a4d4428 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v000002434a4c3e50_0 .net "out_rf2D", 31 0, o000002434a4d4428;  0 drivers
+v000002434a4c3ef0_0 .var "out_rf2E", 31 0;
+o000002434a4d4488 .functor BUFZ 5, C4<zzzzz>; HiZ drive
+v000002434a4c3270_0 .net "rdD", 4 0, o000002434a4d4488;  0 drivers
+v000002434a4c3a90_0 .var "rdE", 4 0;
+o000002434a4d44e8 .functor BUFZ 5, C4<zzzzz>; HiZ drive
+v000002434a4c3590_0 .net "rs1D", 4 0, o000002434a4d44e8;  0 drivers
+v000002434a4c3f90_0 .var "rs1E", 4 0;
+o000002434a4d4548 .functor BUFZ 5, C4<zzzzz>; HiZ drive
+v000002434a4c3770_0 .net "rs2D", 4 0, o000002434a4d4548;  0 drivers
+v000002434a4c3b30_0 .var "rs2E", 4 0;
+o000002434a4d45a8 .functor BUFZ 1, C4<z>; HiZ drive
+v000002434a4c3450_0 .net "rst_n", 0 0, o000002434a4d45a8;  0 drivers
+o000002434a4d45d8 .functor BUFZ 1, C4<z>; HiZ drive
+v000002434a4c3bd0_0 .net "wen_rfD", 0 0, o000002434a4d45d8;  0 drivers
+v000002434a4c3310_0 .var "wen_rfE", 0 0;
+o000002434a4d4638 .functor BUFZ 2, C4<zz>; HiZ drive
+v000002434a4c3810_0 .net "writebackD", 1 0, o000002434a4d4638;  0 drivers
+v000002434a4c3630_0 .var "writebackE", 1 0;
+E_000002434a4d19f0/0 .event negedge, v000002434a4c3450_0;
+E_000002434a4d19f0/1 .event posedge, v000002434a4c2dc0_0;
+E_000002434a4d19f0 .event/or E_000002434a4d19f0/0, E_000002434a4d19f0/1;
+    .scope S_000002434a492720;
+T_0 ;
+    %wait E_000002434a4d19f0;
+    %load/vec4 v000002434a4c3450_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000002434a4c3d10_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000002434a5dbec0_0, 0;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v000002434a4c3630_0, 0;
+    %pushi/vec4 0, 0, 3;
+    %assign/vec4 v000002434a4c3040_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000002434a4c4030_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000002434a4c2f00_0, 0;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000002434a4929e0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000002434a5dbd80_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000002434a4c3310_0, 0;
+    %pushi/vec4 0, 0, 32;
+    %assign/vec4 v000002434a4c33b0_0, 0;
+    %pushi/vec4 0, 0, 32;
+    %assign/vec4 v000002434a4c3ef0_0, 0;
+    %pushi/vec4 0, 0, 32;
+    %assign/vec4 v000002434a4c34f0_0, 0;
+    %pushi/vec4 0, 0, 5;
+    %assign/vec4 v000002434a4c3a90_0, 0;
+    %pushi/vec4 0, 0, 8;
+    %assign/vec4 v000002434a492b20_0, 0;
+    %pushi/vec4 0, 0, 8;
+    %assign/vec4 v000002434a5dbc40_0, 0;
+    %pushi/vec4 0, 0, 5;
+    %assign/vec4 v000002434a4c3f90_0, 0;
+    %pushi/vec4 0, 0, 5;
+    %assign/vec4 v000002434a4c3b30_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v000002434a4c36d0_0;
+    %assign/vec4 v000002434a4c3d10_0, 0;
+    %load/vec4 v000002434a5dbe20_0;
+    %assign/vec4 v000002434a5dbec0_0, 0;
+    %load/vec4 v000002434a4c3810_0;
+    %assign/vec4 v000002434a4c3630_0, 0;
+    %load/vec4 v000002434a4c2fa0_0;
+    %assign/vec4 v000002434a4c3040_0, 0;
+    %load/vec4 v000002434a4c3db0_0;
+    %assign/vec4 v000002434a4c4030_0, 0;
+    %load/vec4 v000002434a4c2e60_0;
+    %assign/vec4 v000002434a4c2f00_0, 0;
+    %load/vec4 v000002434a492dd0_0;
+    %assign/vec4 v000002434a4929e0_0, 0;
+    %load/vec4 v000002434a5dbce0_0;
+    %assign/vec4 v000002434a5dbd80_0, 0;
+    %load/vec4 v000002434a4c3bd0_0;
+    %assign/vec4 v000002434a4c3310_0, 0;
+    %load/vec4 v000002434a4c3130_0;
+    %assign/vec4 v000002434a4c33b0_0, 0;
+    %load/vec4 v000002434a4c3e50_0;
+    %assign/vec4 v000002434a4c3ef0_0, 0;
+    %load/vec4 v000002434a4c31d0_0;
+    %assign/vec4 v000002434a4c34f0_0, 0;
+    %load/vec4 v000002434a4c3270_0;
+    %assign/vec4 v000002434a4c3a90_0, 0;
+    %load/vec4 v000002434a492a80_0;
+    %assign/vec4 v000002434a492b20_0, 0;
+    %load/vec4 v000002434a5dbba0_0;
+    %assign/vec4 v000002434a5dbc40_0, 0;
+    %load/vec4 v000002434a4c3590_0;
+    %assign/vec4 v000002434a4c3f90_0, 0;
+    %load/vec4 v000002434a4c3770_0;
+    %assign/vec4 v000002434a4c3b30_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "ID_EX.v";
