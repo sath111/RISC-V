@@ -1,24 +1,24 @@
-**RISC-V RV32I Processor with 5-Stage-Pipeline**  
-A 32-bit RISC-V processor implemented in Verilog with a 5-stage pipeline. Designed to execute most base RV32I instructions efficiently, with hazard handing support.
+# **RISC-V RV32I Processor with 5-Stage-Pipeline** 
+A 32-bit RISC-V processor implemented in Verilog with a 5-stage pipeline. Designed to execute most base RV32I instructions efficiently, with hazard handing support.  
 
-**#Features** 
-* **Instruction set:** supports most RV32I base integer instructions.
-* **Pipeline Stages:** 5-stages pipeline --Fetch, Decode, Execute, Memory, Writeback.
-* **Hazard handling:** includes forwarding, stalling, and flushing, logic.
-* **Modular design:** clean separation of datapath, control, and memory, making the design easy to test and extend.  
+**#Features**
+* **Instruction set:** supports most RV32I base integer instructions.  
+* **Pipeline Stages:** 5-stages pipeline --Fetch, Decode, Execute, Memory, Writeback.  
+* **Hazard handling:** implements data forwarding, pipeline stalling, and flushing for correct instruction exexcution.  
+* **Modular design:** clean separation of datapath, control unit, and memory.  
 
 **#Simulation Guide**   
-1. Install a Verilog simulator
-2. Compile source code with testbench
+1. Install a Verilog simulator  
+2. Compile source code with testbench  
    ```
    iverilog -o RV32I_PIPELINE_tb RV32I_PIPELINE_tb.v
    ```
    
-3. Run the simulator
+3. Run the simulator  
    ```
    vvp RV32I_PIPELINE_tb
    ```
-5. View waveform output
+5. View waveform output  
    ```
    gtkwave RV32I_PIPELINE_tb.vcd
    ```
