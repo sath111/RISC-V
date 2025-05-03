@@ -18,7 +18,7 @@ A 32-bit RISC-V processor implemented in Verilog with a 5-stage pipeline. Design
    ```
    vvp RV32I_PIPELINE_tb
    ```
-5. View waveform output  
+4. View waveform output  
    ```
    gtkwave RV32I_PIPELINE_tb.vcd
    ```
