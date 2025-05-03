@@ -3,7 +3,7 @@ A 32-bit RISC-V processor implemented in Verilog with a 5-stage pipeline. Design
 
 ## **Features**
 * **Instruction set:** supports most RV32I base integer instructions.  
-* **Pipeline Stages:** 5-stages pipeline --Fetch, Decode, Execute, Memory, Writeback.  
+* **Pipeline Stages:** 5-stages pipeline - Fetch, Decode, Execute, Memory, Writeback.  
 * **Hazard handling:** implements data forwarding, pipeline stalling, and flushing for correct instruction execution.  
 * **Modular design:** clean separation of datapath, control unit, and memory.  
 
