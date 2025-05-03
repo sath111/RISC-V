@@ -1,10 +1,10 @@
 # **RISC-V RV32I Processor with 5-Stage-Pipeline** 
-A 32-bit RISC-V processor implemented in Verilog with a 5-stage pipeline. Designed to execute most base RV32I instructions efficiently, with hazard handing support.  
+A 32-bit RISC-V processor implemented in Verilog with a 5-stage pipeline. Designed to execute most base RV32I instructions efficiently, with hazard handling support.  
 
 ## **Features**
 * **Instruction set:** supports most RV32I base integer instructions.  
 * **Pipeline Stages:** 5-stages pipeline --Fetch, Decode, Execute, Memory, Writeback.  
-* **Hazard handling:** implements data forwarding, pipeline stalling, and flushing for correct instruction exexcution.  
+* **Hazard handling:** implements data forwarding, pipeline stalling, and flushing for correct instruction execution.  
 * **Modular design:** clean separation of datapath, control unit, and memory.  
 
 ## **Simulation Guide**   
@@ -24,7 +24,7 @@ A 32-bit RISC-V processor implemented in Verilog with a 5-stage pipeline. Design
    ```
    
 ## **Project Goals**  
-The main goal of this project is to **gain hands-on experience in digital design and computer architecture, especcially using Verilog**. As this is my frist Verilog-based project, some imperfections are to be expected. However, it serves as a valuable foundation for future improvements and more advanced processor designs.
+The main goal of this project is to **gain hands-on experience in digital design and computer architecture, especially using Verilog**. As this is my first Verilog-based project, some imperfections are to be expected. However, it serves as a valuable foundation for future improvements and more advanced processor designs.
 
  
 
