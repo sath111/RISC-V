@@ -1,0 +1,114 @@
+$date
+	Sat Apr 05 16:29:23 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module DMEM_tb $end
+$var wire 8 ! rdata [7:0] $end
+$var reg 8 " addr [7:0] $end
+$var reg 1 # clk $end
+$var reg 1 $ cs $end
+$var reg 1 % rst_n $end
+$var reg 8 & wdata [7:0] $end
+$var reg 1 ' wen_ren $end
+$scope module uut $end
+$var wire 8 ( addr [7:0] $end
+$var wire 1 # clk $end
+$var wire 1 $ cs $end
+$var wire 1 % rst_n $end
+$var wire 8 ) wdata [7:0] $end
+$var wire 1 ' wen_ren $end
+$var reg 8 * rdata [7:0] $end
+$var integer 32 + i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx +
+bx *
+b0 )
+b0 (
+0'
+b0 &
+1%
+0$
+0#
+b0 "
+bx !
+$end
+#5
+1#
+#10
+b100000000 +
+0#
+0%
+#15
+b100000000 +
+1#
+#20
+0#
+1%
+#25
+1#
+#30
+0#
+b11110 &
+b11110 )
+b11 "
+b11 (
+1'
+1$
+#35
+1#
+#40
+0#
+b101000 &
+b101000 )
+b100 "
+b100 (
+#45
+1#
+#50
+0#
+b110010 &
+b110010 )
+b101 "
+b101 (
+#55
+1#
+#60
+0#
+0'
+0$
+#65
+1#
+#70
+0#
+1$
+#75
+b110010 !
+b110010 *
+1#
+#80
+0#
+b100 "
+b100 (
+#85
+b101000 !
+b101000 *
+1#
+#90
+0#
+b11 "
+b11 (
+#95
+b11110 !
+b11110 *
+1#
+#100
+0#
