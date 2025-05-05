@@ -1,0 +1,37 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "D:\iverilog\iverilog\lib\ivl\system.vpi";
+:vpi_module "D:\iverilog\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\iverilog\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\iverilog\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\iverilog\iverilog\lib\ivl\va_math.vpi";
+S_00000213b83c2720 .scope module, "MUX2" "MUX2" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 21 "ins";
+    .port_info 1 /INPUT 32 "wb_data";
+    .port_info 2 /INPUT 1 "src_rf";
+    .port_info 3 /OUTPUT 32 "wb_data_rf";
+v00000213b83c2f40_0 .net *"_ivl_1", 0 0, L_00000213b83c2950;  1 drivers
+v00000213b83aeca0_0 .net *"_ivl_2", 10 0, L_00000213b83c29f0;  1 drivers
+v00000213b83aed40_0 .net "a", 31 0, L_00000213b83c2a90;  1 drivers
+o00000213b83f6f08 .functor BUFZ 21, C4<zzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v00000213b83aede0_0 .net "ins", 20 0, o00000213b83f6f08;  0 drivers
+o00000213b83f6f38 .functor BUFZ 1, C4<z>; HiZ drive
+v00000213b83aee80_0 .net "src_rf", 0 0, o00000213b83f6f38;  0 drivers
+o00000213b83f6f68 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v00000213b83aef20_0 .net "wb_data", 31 0, o00000213b83f6f68;  0 drivers
+v00000213b83c28b0_0 .net "wb_data_rf", 31 0, L_00000213b83c2b30;  1 drivers
+L_00000213b83c2950 .part o00000213b83f6f08, 20, 1;
+LS_00000213b83c29f0_0_0 .concat [ 1 1 1 1], L_00000213b83c2950, L_00000213b83c2950, L_00000213b83c2950, L_00000213b83c2950;
+LS_00000213b83c29f0_0_4 .concat [ 1 1 1 1], L_00000213b83c2950, L_00000213b83c2950, L_00000213b83c2950, L_00000213b83c2950;
+LS_00000213b83c29f0_0_8 .concat [ 1 1 1 0], L_00000213b83c2950, L_00000213b83c2950, L_00000213b83c2950;
+L_00000213b83c29f0 .concat [ 4 4 3 0], LS_00000213b83c29f0_0_0, LS_00000213b83c29f0_0_4, LS_00000213b83c29f0_0_8;
+L_00000213b83c2a90 .concat [ 21 11 0 0], o00000213b83f6f08, L_00000213b83c29f0;
+L_00000213b83c2b30 .functor MUXZ 32, L_00000213b83c2a90, o00000213b83f6f68, o00000213b83f6f38, C4<>;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "MUX2.v";

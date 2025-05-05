@@ -1,0 +1,37 @@
+$date
+	Mon Apr 07 22:46:05 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module IMEM_tb $end
+$var wire 32 ! rdata [31:0] $end
+$var reg 2 " addr [1:0] $end
+$scope module dut $end
+$var wire 2 # addr [1:0] $end
+$var reg 32 $ rdata [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx $
+bx #
+bx "
+bx !
+$end
+#10
+b11111111000000001111111100000000 !
+b11111111000000001111111100000000 $
+b0 "
+b0 #
+#20
+b1 "
+b1 #
+#30
+b10 "
+b10 #
+#40
